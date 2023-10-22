@@ -1,6 +1,7 @@
 site_name: 没有用的网站
 theme:
   name: mkdocs
+  custom_dir: docs/main.html
   features:
     - navigation.tabs
     - navigation.sections
