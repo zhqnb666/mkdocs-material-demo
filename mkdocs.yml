@@ -1,0 +1,17 @@
+site_name: 没有用的网站
+theme:
+  name: mkdocs
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - toc.integrate
+    - navigation.top
+    - search.suggest
+    - search.highlight
+    - content.tab.link
+    - content.code.annotation
+    - content.code.copy
+  language: zh-CN
+  palette: 
+    - scheme: default
+      toggle: 
