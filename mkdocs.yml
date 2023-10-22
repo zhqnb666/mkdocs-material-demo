@@ -12,6 +12,4 @@ theme:
     - content.code.annotation
     - content.code.copy
   language: zh-CN
-  palette: 
-    - scheme: default
-      toggle: 
+  
