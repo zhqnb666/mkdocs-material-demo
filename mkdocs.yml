@@ -12,9 +12,5 @@ theme:
     - content.code.annotation
     - content.code.copy
   language: zh-CN
-  nav:
-  - Home: 'index.md'
-  - 'User Guide':
-    - 'Configuration options': 'configuration-options.md'
-    - 'Getting started': 'Getting started.md'
+  
   
