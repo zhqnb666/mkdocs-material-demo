@@ -21,11 +21,11 @@
 
 $\textbf{定义4.1.2}$
 
-1. 加法\
+1. 加法  
 设$\varphi,\psi$是$\mathbb{K}$上线性空间$V\rightarrow U$的线性映射，$\varphi+\psi$为$V\rightarrow U$上的映射
 $$(\varphi+\psi)(\mathbf{\alpha})=\varphi(\mathbf{\alpha})+\psi(\mathbf{\alpha})$$
 
-2. 数乘\
+2. 数乘  
 若$k\in \mathbb{K}$,则$k\varphi$为$V\rightarrow U$上的映射
 $$(k\varphi)(\mathbf{\alpha})=k\varphi(\mathbf{\alpha}),\mathbf{\alpha}\in V$$
 
