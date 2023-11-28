@@ -4,9 +4,9 @@
 
 ### 概念
 
-> $\textbf{定义4.1.1 }$设$\varphi$是数域$\mathbb{F}$上向量空间$V$到$U$的映射，若$\varphi$适合以下条件：\
-(1) $\varphi(\alpha+\beta)=\varphi(\alpha)+\varphi(\beta), \alpha,\beta\in V$;\
-(2) $\varphi(k\alpha)=k\varphi(\alpha),\alpha\in V, k\in\mathbb{F},$\
+> $\textbf{定义4.1.1 }$设$\varphi$是数域$\mathbb{F}$上向量空间$V$到$U$的映射，若$\varphi$适合以下条件：  
+(1) $\varphi(\alpha+\beta)=\varphi(\alpha)+\varphi(\beta), \alpha,\beta\in V$;  
+(2) $\varphi(k\alpha)=k\varphi(\alpha),\alpha\in V, k\in\mathbb{F},$  
 则称$\varphi$是向量空间$V$到$U$的线性映射.
 
 * $V$到自身的线性映射成为$V$上的线性变换;
@@ -33,5 +33,5 @@ $$(k\varphi)(\mathbf{\alpha})=k\varphi(\mathbf{\alpha}),\mathbf{\alpha}\in V$$
 
 ### 1. 定义
 
-> $\textbf{像空间}Im(\varphi)=\{\varphi(v)\mid v\in V\}$\
+> $\textbf{像空间}Im(\varphi)=\{\varphi(v)\mid v\in V\}$  
 $\textbf{核空间}Ker(\varphi)=\{v\mid \varphi(v)=0_{U}\}$
