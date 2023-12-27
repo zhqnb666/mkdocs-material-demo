@@ -10,14 +10,14 @@ $$(\beta_1,...,\beta_n)
     x_1 \\
     x_2 \\
     \vdots\\
-    x_n
+    x_n\\
 \end{pmatrix}
 =B
 \begin{pmatrix}
     x_1 \\
     x_2 \\
     \vdots\\
-    x_n
+    x_n\\
 \end{pmatrix}=0$$
 左乘$A$得到：
 $$AB
@@ -25,24 +25,24 @@ $$AB
     x_1 \\
     x_2 \\
     \vdots\\
-    x_n
+    x_n\\
 \end{pmatrix}=0\Longrightarrow \begin{pmatrix}
     x_1 \\
     x_2 \\
     \vdots\\
-    x_n
+    x_n\\
 \end{pmatrix}=
 E\begin{pmatrix}
     x_1 \\
     x_2 \\
     \vdots\\
-    x_n
+    x_n\\
 \end{pmatrix}=
 AB
 \begin{pmatrix}
     x_1 \\
     x_2 \\
     \vdots\\
-    x_n
+    x_n\\
 \end{pmatrix}=0$$
 于是$x_1=x_2=...=x_n=0$，故$\beta_1,...,\beta_n$线性无关.
