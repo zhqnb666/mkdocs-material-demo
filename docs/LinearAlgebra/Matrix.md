@@ -35,8 +35,8 @@ $$AB
 E\begin{pmatrix}
     x_1 \\
     x_2 \\
-    \vdots\\
-    x_n\\
+    \vdots \\
+    x_n \\
 \end{pmatrix}=
 AB
 \begin{pmatrix}
