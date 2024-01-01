@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        
+        
+        <link rel="shortcut icon" href="../../img/favicon.ico">
+        <title>线性映射 - 没有用的网站</title>
+        <link href="../../css/bootstrap.min.css" rel="stylesheet">
+        <link href="../../css/font-awesome.min.css" rel="stylesheet">
+        <link href="../../css/base.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css">
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+        <script>hljs.highlightAll();</script>
+<script>
+    MathJax = {
+        tex: {
+            inlineMath: [['$', '$'], ['\\(', '\\)']]
+        }
+    };
+</script>
+<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js">
+</script>
+ 
+    </head>
+
+    <body>
+        <div class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
+            <div class="container">
+                <a class="navbar-brand" href="../..">没有用的网站</a>
+                <!-- Expander button -->
+                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbar-collapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Expanded navigation -->
+                <div id="navbar-collapse" class="navbar-collapse collapse">
+                        <!-- Main navigation -->
+                        <ul class="nav navbar-nav">
+                            <li class="navitem">
+                                <a href="../.." class="nav-link">主页</a>
+                            </li>
+                            <li class="navitem">
+                                <a href="../../page2/" class="nav-link">用mkdocs创建网站</a>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Calculus <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../Calculus/IntegralInequality/" class="dropdown-item">积分不等式</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown active">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">LinearAlgebra <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="./" class="dropdown-item active">线性映射</a>
+</li>
+                                    
+<li>
+    <a href="../Matrix/" class="dropdown-item">矩阵</a>
+</li>
+                                    
+<li>
+    <a href="../eigenvalue/" class="dropdown-item">特征值</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">User guide <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../user-guide/configuration-options/" class="dropdown-item">Configuration Options</a>
+</li>
+                                    
+<li>
+    <a href="../../user-guide/getting_started/" class="dropdown-item">Getting Started</a>
+</li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Shui</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../user-guide/shui/limit/" class="dropdown-item">数列极限</a>
+</li>
+            
+<li>
+    <a href="../../user-guide/shui/matrix/" class="dropdown-item">数学公式</a>
+</li>
+    </ul>
+  </li>
+                                </ul>
+                            </li>
+                        </ul>
+
+                    <ul class="nav navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link" data-toggle="modal" data-target="#mkdocs_search_modal">
+                                <i class="fa fa-search"></i> Search
+                            </a>
+                        </li>
+                            <li class="nav-item">
+                                <a rel="prev" href="../../Calculus/IntegralInequality/" class="nav-link">
+                                    <i class="fa fa-arrow-left"></i> Previous
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a rel="next" href="../Matrix/" class="nav-link">
+                                    Next <i class="fa fa-arrow-right"></i>
+                                </a>
+                            </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                    <div class="col-md-3"><div class="navbar-light navbar-expand-md bs-sidebar hidden-print affix" role="complementary">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggler collapsed" data-toggle="collapse" data-target="#toc-collapse" title="Table of Contents">
+            <span class="fa fa-angle-down"></span>
+        </button>
+    </div>
+
+    
+    <div id="toc-collapse" class="navbar-collapse collapse card bg-secondary">
+        <ul class="nav flex-column">
+            
+            <li class="nav-item" data-level="1"><a href="#_1" class="nav-link">线性映射</a>
+              <ul class="nav flex-column">
+            <li class="nav-item" data-level="2"><a href="#_2" class="nav-link">线性映射及运算</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#_5" class="nav-link">核空间与像空间</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+              </ul>
+            </li>
+        </ul>
+    </div>
+</div></div>
+                    <div class="col-md-9" role="main">
+
+<h1 id="_1">线性映射</h1>
+<h2 id="_2">线性映射及运算</h2>
+<h3 id="_3">概念</h3>
+<blockquote>
+<p>$\textbf{定义4.1.1 }$设$\varphi$是数域$\mathbb{F}$上向量空间$V$到$U$的映射，若$\varphi$适合以下条件：<br />
+(1) $\varphi(\alpha+\beta)=\varphi(\alpha)+\varphi(\beta), \alpha,\beta\in V$;<br />
+(2) $\varphi(k\alpha)=k\varphi(\alpha),\alpha\in V, k\in\mathbb{F},$<br />
+则称$\varphi$是向量空间$V$到$U$的线性映射.</p>
+</blockquote>
+<ul>
+<li>
+<p>$V$到自身的线性映射成为$V$上的线性变换;</p>
+</li>
+<li>
+<p>$\varphi:V\rightarrow V$为线性变换;</p>
+</li>
+<li>
+<p>若$\varphi$是单射（满射），则成为单（满）线性映射;</p>
+</li>
+<li>
+<p>若$\varphi$是双射，则称$\varphi:V\rightarrow U$为线性同构，记为$V\cong U$.</p>
+</li>
+</ul>
+<h3 id="_4">运算</h3>
+<p>$\textbf{定义4.1.2}$</p>
+<ol>
+<li>
+<p><strong>加法</strong><br />
+设$\varphi,\psi$是$\mathbb{K}$上线性空间$V\rightarrow U$的线性映射，$\varphi+\psi$为$V\rightarrow U$上的映射
+$$(\varphi+\psi)(\mathbf{\alpha})=\varphi(\mathbf{\alpha})+\psi(\mathbf{\alpha})$$</p>
+</li>
+<li>
+<p><strong>数乘</strong><br />
+若$k\in \mathbb{K}$,则$k\varphi$为$V\rightarrow U$上的映射
+$$(k\varphi)(\mathbf{\alpha})=k\varphi(\mathbf{\alpha}),\mathbf{\alpha}\in V$$</p>
+</li>
+</ol>
+<blockquote>
+<p><strong>命题1</strong> 设$\varphi:V\rightarrow U$为线性映射，则<br />
+(1) $\varphi (0_{V})=0_{U}$;<br />
+(2) $\forall \alpha, \beta\in V,k,l\in\mathbb{K}, \varphi(k\alpha+l\beta)=k\varphi(\alpha)+l\varphi(\beta)$;<br />
+(3) 若$\varphi:V\rightarrow U$为线性同构，则$\varphi^{-1}:U\rightarrow V$也为线性同构; <br />
+(4) 设$\varphi:V\rightarrow U,\psi:U\rightarrow W$为线性映射（同构）, <br />
+则$\varphi\circ \psi:V\rightarrow W$为线性映射（同构）.</p>
+</blockquote>
+<p><strong>证明:</strong><br />
+(3) 
+$\varphi$是双射$\Longrightarrow \varphi^{-1}$是双射，因此只要证$\varphi^{-1}$保持线性组合.<br />
+任取$x,y\in U,k,l\in\mathbb{K}$, 只需$\varphi^{-1}(kx+ly)=k\varphi^{-1}(x)+l\varphi^{-1}(y)$.<br />
+$\because \varphi(\varphi^{-1}(kx+ly)-k\varphi^{-1}(x)-l\varphi^{-1}(y))=0_{U}$<br />
+$\therefore \varphi^{-1}(kx+ly)-k\varphi^{-1}(x)-l\varphi^{-1}(y)=0_{V}$<br />
+于是$\varphi^{-1}(kx+ly)=k\varphi^{-1}(x)+l\varphi^{-1}(y)$.</p>
+<blockquote>
+<p><strong>推论</strong><br />
+（1）线性同构是等价关系；<br />
+（2）两个线性空间之间存在同构$\Longleftrightarrow$它们维数相同.  </p>
+</blockquote>
+<p><strong>证明</strong><br />
+1. 必要性<br />
+设$\varphi:V\rightarrow U$为线性同构，任取$V$的一组基{$e_{1},...,e_{n}$},<br />
+则{$\varphi(e_{1}),...,\varphi(e_{n})$}线性无关.<br />
+任取$x\in U,\exists \alpha\in V, x=\varphi(\alpha)$. 设$\alpha=a_{1}e_{1}+...+a_{n}e_{n}$, 则<br />
+$x=\varphi(\alpha)=a_{1}\varphi(e_{1})+...+a_{n}\varphi(e_{n})$<br />
+$\therefore$ {$\varphi(e_{1}),...,\varphi(e_{n})$}是$U$的一组基，$\dim V=\dim U=n$.<br />
+2. 充分性<br />
+设$\dim V=\dim U=n$,$V$的基为${e_1,...,e_n}$,$U$的基为${f_1,...,f_n}$<br />
+$\varphi_V:V\rightarrow \mathbb{K}^n，\alpha=\sum a_i e_i\longmapsto \begin{pmatrix}
+             a_1 \
+             \vdots\
+             a_n
+         \end{pmatrix}$是线性同构，<br />
+$\varphi_U:U\rightarrow \mathbb{K}^n,\beta=\sum b_i e_i\longmapsto \begin{pmatrix}
+             b_1 \
+             \vdots\
+             b_n
+\end{pmatrix}$是线性同构.<br />
+$\varphi^{-1}_U\circ\varphi_V:V\rightarrow U$为线性同构.</p>
+<p>设$V,U$为$\mathbb{K}$上的线性空间，记$\mathscr{L}(V,U)$为$V$到$U$的线性映射全体.<br />
+对于$\varphi,\psi\in\mathscr{L}(V,U)$<br />
+定义加法$(\varphi+\psi)(\alpha)\xlongequal{def}\varphi(\alpha)+\psi(\alpha)$;<br />
+定义数乘$k\in\mathbb{K},(k\varphi)(\alpha)\xlongequal{def}k\cdot\varphi(\alpha)$.<br />
+定义复合$\psi\circ\varphi:V\rightarrow V$为乘法.</p>
+<blockquote>
+<p><strong>定理</strong> $\mathscr{L}$在上述定义下为$\mathbb{K}$上的线性空间.</p>
+<p><strong>定义</strong> 设$A$为数域$\mathbb{K}$上的线性空间，<br />
+定义乘法运算 $\cdot:A\times A\rightarrow A, (a,b)\longmapsto a\cdot b$ ,若$\forall a,b,c\in A,k\in\mathbb{K}$
+满足<br />
+（1）乘法结合律：$(a\cdot b)\cdot c=a\cdot (b\cdot c)$<br />
+（2）乘法单位元：$\exists e\in A, e\cdot a=a\cdot e=a$<br />
+（3）乘法分配律：$a\cdot(b+c)=a\cdot b+a\cdot c,(a+b)\cdot c=a\cdot c+b\cdot c$<br />
+（4）乘法数乘相容性：$k(a\cdot b)=(ka)\cdot(b)=a\cdot(kb)$<br />
+则称$A$为$\mathbb{K}$上的代数.  </p>
+</blockquote>
+<h2 id="_5">核空间与像空间</h2>
+<h3 id="_6">定义</h3>
+<blockquote>
+<p>$\textbf{像空间}Im(\varphi)=${$\varphi(v)\mid v\in V$}  <br />
+$\textbf{核空间}Ker(\varphi)=${$v\mid \varphi(v)=0_{U}$}</p>
+</blockquote></div>
+            </div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script src="../../js/jquery-3.6.0.min.js"></script>
+        <script src="../../js/bootstrap.min.js"></script>
+        <script>
+            var base_url = "../..",
+                shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
+        </script>
+        <script src="../../js/base.js"></script>
+        <script src="../../search/main.js"></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="searchModalLabel">Search</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+                <p>From here you can search these documents. Enter your search terms below.</p>
+                <form>
+                    <div class="form-group">
+                        <input type="search" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results" data-no-results-text="No results found"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="keyboardModalLabel">Keyboard Shortcuts</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>
